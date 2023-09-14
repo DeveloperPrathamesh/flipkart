@@ -1,0 +1,164 @@
+body{
+    margin: auto;
+    font-family: sans-serif;
+    background-color:#f1f3f6;
+}
+.maindiv{
+    display: inline-block;
+}
+header{
+    height:11%;
+    width:100%;
+    background-color: #2874f0;
+}
+
+header a img{
+    float:left;
+    width:90px;
+    height:80%;
+    margin: 5px 15px;
+}
+
+.sl{
+    float: right;
+    margin-top: 30px;
+    margin-right: 20px;
+}
+
+.su{
+    
+    text-decoration: none;
+    color:aliceblue;
+    padding: 10px;
+}
+#heading{
+    width:100%;
+    
+    background-color: #ffffff;
+    border-bottom: solid gray 1px;
+    margin-top: 1%;
+     
+   /* border:solid red 2px;*/
+}
+
+#heading h2{
+    text-align: center;
+    
+    padding-top: 2%;
+    
+}
+
+#heading p{
+    text-align: center;
+    color:gray;
+    padding: 0%;
+}
+
+
+#products{
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;    
+    margin: 1%;
+    background-color: white;
+}
+    
+   
+.card{
+    /*height:350px;*/
+    width:15%;
+    padding: 1%;
+    background-color: #ffffff;
+    border: 1px solid gray;
+    margin:2%;
+    margin-left: 5%;
+    animation: ramp 5s infinite;
+}
+
+/* @keyframes ramp{
+    0%{
+        transform:rotate(-40deg)
+    }
+    25%{
+        transform:rotate(-20deg)
+    }
+    50%{
+        transform:rotate(0deg)
+    }
+    25%{
+        transform:rotate(20deg)
+    }
+    100%{
+        transform:rotate(40deg)
+    }
+} */
+
+.card:hover{
+    box-shadow: 0 0 11px gray;
+    transform:scale(1.1);
+}
+
+
+.product img{
+    width:100%;
+    height:200px;
+
+}
+
+#off{
+    color:green;
+    font-size: 13px;
+    font-weight: lighter;
+}
+
+.price p{
+    text-align: center;
+    color: black;
+    font-weight: bold;
+
+}
+
+footer{
+    width:100%;
+    text-align: center;
+    background-color: #172337;
+    color:#ffffff;
+    padding-top: 1%;
+    padding-bottom: 2%;
+}
+
+.foot ul{
+    list-style-type: none;
+    
+}
+
+.foot{
+    display: inline-block;
+    border-right: 1px solid white;
+    width:32%;
+}
+
+.noborder{
+    border:none;
+}
+
+.footext{
+    margin-bottom: 2%;
+}
+
+
+
+@media screen and (max-width:980px){
+    .card{
+        width:20%;
+        margin-left: 7%;
+    }
+}
+
+@media screen and (max-width:700px){
+    .card{
+        width:30%;
+        margin-left: 10%
+        
+    }
+}
