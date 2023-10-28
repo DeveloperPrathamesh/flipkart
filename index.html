@@ -8,6 +8,17 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
         <link href="Images/fliplogo.ico" rel="icon">
         <link href="stylesheet.css" rel="stylesheet">
+        <script>
+        function onloadPage(){
+        document.getElementById('coupon').style.visibility = 'visible';
+        document.getElementById('search').style.opacity = '0.7'
+}
+
+        function closeCoupon(){
+            document.getElementById('coupon').style.visibility = 'hidden';
+            document.getElementById('search').style.opacity = '1'
+        }
+    </script>
     </head>
     <script>
          let changemode = ()  => {
@@ -19,6 +30,10 @@
     </script>
     <body>
         <header class="sticky-top">
+            <div id="coupon">
+                <span>Thanks for coming</span>
+                <button onClick="closeCoupon()">&times;</button>
+           </div>
             <a href="#">
                 <img src="Images/flpklogo.png" alt="Flipkart">
             </a>
@@ -446,5 +461,8 @@
                   </div>
                 </div>
               </div>
+                <script>
+                window.onload = onloadPage()
+            </script>      
     </body>
 </html>
