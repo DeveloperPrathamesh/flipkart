@@ -7,6 +7,10 @@ body{
     font-family: sans-serif;
     background-color:#f1f3f6;
 }
+.dark{
+    background-color:black;
+    color:white;
+}
 .maindiv{
     display: inline-block;
 }
