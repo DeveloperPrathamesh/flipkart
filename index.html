@@ -9,6 +9,14 @@
         <link href="Images/fliplogo.ico" rel="icon">
         <link href="stylesheet.css" rel="stylesheet">
     </head>
+    <script>
+         let changemode = ()  => {
+                let mainbody = document.body;
+                mainbody.classList.toggle('dark');
+
+              
+            }
+    </script>
     <body>
         <header class="sticky-top">
             <a href="#">
@@ -17,6 +25,7 @@
             <div class="sl">
                 <a href="#"  class="su"  data-bs-toggle="modal" data-bs-target="#signup-modal" aria-current="page">SignUp</a>
                 <a href="#" class="su" data-bs-toggle="modal" data-bs-target="#signup-modal" aria-current="page">Login</a>
+              <button type="button" class="darkbtn" onclick="changemode()"><i class="fa-regular fa-lightbulb"></i></button>
             </div>
             
         </header>
