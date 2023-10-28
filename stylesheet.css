@@ -20,6 +20,24 @@ header{
     background-color: #2874f0;
 }
 
+#coupon{
+    height:300px;
+    width:600px;
+    background-color: white;
+    position: absolute;
+    margin-top: 2%;
+    margin-left: 34%;
+    z-index: 100;
+    visibility:hidden;
+}
+
+#coupon button{
+    float: right;
+}
+
+#coupon span{
+    font-size: 30px;
+}
 
 .navbar{
     background-color: white !important;
