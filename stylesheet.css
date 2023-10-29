@@ -2,18 +2,21 @@
     margin: 0;
     padding: 0;
 }
-body{
-    margin: auto;
-    font-family: sans-serif;
-    background-color:#f1f3f6;
+
+a{
+    text-decoration: none;
 }
-.maindiv{
-    display: inline-block;
+
+body{
+    background-color: #f1f3f6;
+    z-index: 1;
+}
+
+.dark{
+    background-color: black;
 }
 header{
-    height:10%;
     width:100%;
-    background-color: #2874f0;
 }
 
 
@@ -21,216 +24,270 @@ header{
     background-color: white !important;
 }
 
-.brand{
-    margin-left: 120px;
-    padding: 0;
+.logo img{
+    height: 30px;
 }
 
-.logotext{
-    font-size: 13px;
-    margin-left: 65px;
-    font-style: italic;
-
-}
-
-.explore{
-    color: #b9a4a4;
-}
-.plus{
-    color: #ffc33f;
-}
-
-.search-main{
-    /* border: 1px solid red; */
-    
-}
-
-
-
-.box input[type=search]{
-    width:400px;
-    margin-left: 7px;
-    border:none !important;
-    outline: none;
+form .search-box{
+    height:33px;
+    width:500px;
     background-color: #f0f5ff !important;
-    
+    border:none;
+    outline: none;
+    margin-right: 0;
+    border-radius: 6px;
+    padding:5px;
 }
 
-.box input[type=search]:focus{
+form .search-box:focus{
+    outline: none !important;
+}
+form .search-btn{
+    height:33px;
+    background-color:gray;
+}
+
+form .search-btn:hover{
+    background-color: gray;
+}
+
+form .search-btn:focus{
     outline:none !important;
 }
 
-.box form{
-    background-color: #f0f5ff;
-    width:480px;
-    height: 35px;
-    border-radius: 20px;
+.navbar-toggler{
+    outline: none !important;
 }
 
-.box button{
-    border:none;
+.navbar-toggler:focus{
+    outline: none;
 }
 
-.menu{
-    margin-left: 0px;
+.menu li{
+    padding:3px;
 }
 
-.icons{
-    padding-right:50px
+.menu .fa{
+    margin-top:5px;
 }
 
-.fa{
-    font-size: 17px;
+#crsl{
+    margin-top: 20px;
+
 }
 
-
-
-header a img{
-    float:left;
-    width:90px;
-    height:80%;
-    margin: 5px 15px;
-}
-.slid{
-    margin-top:1%;
-}
-.sl{
-    float: right;
-    margin-top: 30px;
-    margin-right: 20px;
-}
-
-.su{
+#coupon{
+    background-image: url(https://images.pexels.com/photos/5625130/pexels-photo-5625130.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size: cover;
+    height:400px;
+    width:500px;
+    background-color: white;
+    position: absolute;
+    z-index: 2;
+    margin-left: 27%;
+    margin-top: 6%;
+    visibility: visible;
     
-    text-decoration: none;
-    color:aliceblue;
-    padding: 10px;
-}
-#heading{
-    width:100%;
-    
-    background-color: #ffffff;
-   
-    margin-top: 1%;
-     
-   /* border:solid red 2px;*/
 }
 
-#heading span{
+#coupon h2{
+    margin-top:18%;
+    margin-bottom:14%;
+}
+.couponcont{
+    text-align: center;
+}
+#coupon p{
+    font-size: 18px;
     font-weight: bold;
-    margin-left:50px;
-    padding-top: 2%;
-    
 }
 
-#heading button{
-    background-color: #1c41d6;
-    color:#f6f7fe;
-    border-radius: 50%;
+#coupon h2{
+    font-weight: bold;
+}
+
+#coupon .code{
+    border:1px solid black;
+    font-size: 25px;
     padding:5px;
-    margin-right: 73px;
-    border: none;
+    display: inline;
+    background-color: gray;
+    color: white ;
+}
+#coupon .close{
+    background-color: blue;
+    border:none;
+    font-size: 18px;
+    padding: 5px;
+}
+.carousel-item img{
+    height:300px;
+    z-index: 1;
 }
 
-#heading .head1{
-    font-size: 20px;;
-}
-#heading .view{
-    margin-left: 67%;
-}
-
-.control{
-    width: 3%;
-    margin-top: 58px;
-    height: 88px;
-    background-color:white;
-    opacity: 1;
-}
-
-.control span i{
-    color:black;
-}
-
-#products{
-    width:100%;
-    display: flex;
-    flex-wrap: wrap;    
-    margin: 1%;
+.slid{
     background-color: white;
-}
     
-#products2{
-    width:100%;
-    display: flex;
-    flex-wrap: wrap;    
-    margin: 1%;
+}
+
+.carousel-indicators{
+    z-index: 1;
+}
+#items{
     background-color: white;
-}   
-.card{
-    /*height:350px;*/
-    width:15%;
-    padding: 1%;
-    background-color: #ffffff;
-    border: 1px solid gray;
-    margin:2%;
-    margin-left: 5%;
-    animation: ramp 5s infinite;
+    margin:1%;
+    padding: 5px;
 }
 
-/* @keyframes ramp{
-    0%{
-        transform:rotate(-40deg)
-    }
-    25%{
-        transform:rotate(-20deg)
-    }
-    50%{
-        transform:rotate(0deg)
-    }
-    25%{
-        transform:rotate(20deg)
-    }
-    100%{
-        transform:rotate(40deg)
-    }
-} */
-
-.card:hover{
-    box-shadow: 0 0 11px gray;
-    transform:scale(1.1);
+#items h4{
+    padding:15px;
 }
 
-
-.product img{
-    width:100%;
-    height:200px;
-
+#items a p{
+    text-align:right;
+    margin-top: 17px;
 }
 
 .price{
-    margin-top: 10px;
-}
-#off{
-    color:green;
-    font-size: 13px;
-    font-weight: lighter;
-}
-
-.price p{
     text-align: center;
-    color: black;
-    font-weight: bold;
 
+}
+
+.item .card{
+    border:1px solid gray;
+    height: 238px;
+    width:230px;
+    padding: 3px 3px;
+   
+}
+
+.card img{
+    height:150px;
+    width:150px;
+    padding:2px;
+}
+
+#items2{
+    background-color: white;
+    margin:1%;
+    padding: 5px;
+}
+
+#items2 h4{
+    padding:15px;
+}
+
+#items2 a p{
+    text-align:right;
+    margin-top: 17px;
+}
+
+#items3{
+    background-color: white;
+    margin:1%;
+    padding: 5px;
+}
+
+#items3 h4{
+    padding:15px;
+}
+
+#items3 a p{
+    text-align:right;
+    margin-top: 17px;
+}
+.view{
+    border:1px solid blue;
+    padding:3px;
+    font-size: 10px;
+}
+
+#reviews{
+    background-color: white;
+    margin:1%;
+    padding: 5px;
+}
+
+#reviews h1{
+    text-align: center;
+    padding:30px;
+    font-weight: bolder;
+}
+.card-body h5{
+    text-align: center;
+}
+
+.card{
+    margin: 7px 0px;
+}
+.card-body .fa-solid{
+    text-align: center;
+}
+
+.detailed{
+    text-align: justify;
+ 
+}
+
+#reviews{
+    padding-bottom: 80px;
+}
+
+.review{
+    padding:5px;
+}
+
+#available{
+    background-color: white;
+    margin:1%;
+    padding: 5px;
+}
+
+.pin input[type=text]{
+    height:46px;
+    margin-top: 8px;
+    padding: 5px;
+    
+}
+.pin .btn{
+    height:46px;
+    margin-bottom: 5px;
+}
+
+#offer1{
+    background-color: white;
+    margin:1%;
+    padding: 10px;
+}
+
+#offer1 img{
+    height: 100px;
+}
+
+#mobiles{
+    background-color: white;
+    margin:1%;
+    padding: 5px;
+}
+
+#mobiles a p{
+    text-align:right;
+    margin-top: 17px;
+}
+
+#mobiles h4{
+    padding:15px;
 }
 
 footer{
     width:100%;
     text-align: center;
-    background-color: #172337;
-    color:#ffffff;
+    background-color: #212121;
+    color:#f8f8f8;
     padding-top: 1%;
     padding-bottom: 2%;
 }
+
 
 .foot ul{
     list-style-type: none;
@@ -251,19 +308,111 @@ footer{
     margin-bottom: 2%;
 }
 
+.darkbtn1{
+    border:none;
+    background: transparent;
+}
 
+.darkbtn1 i{
+    font-size:30px;
+}
+@media only screen and (min-width:992px){
+    .search-box{
+        margin-left: 140px;
+        width:450px;
+    }
 
-@media screen and (max-width:980px){
-    .card{
-        width:20%;
-        margin-left: 7%;
+    
+}
+
+@media only screen and (max-width:992px){
+   
+
+    .carousel-item{
+        height: 250px !important;
+    }
+    .carousel-item img{
+        height:250px;
+    }
+    .item .card{
+        height: 238px;
+    }
+   
+}
+
+@media only screen and (max-width:1042px){
+.search-container{
+    display: none;
+ }
+}
+
+@media only screen and (min-width:992px){
+    .darkbtn1{
+        display: none;
+    }
+}
+@media screen and (max-width:800px){
+    .item .card {
+        width:200px;
+    }
+    
+    .carousel-item{
+        height: 200px !important;
+    }
+    .carousel-item img{
+        height:200px;
     }
 }
 
-@media screen and (max-width:700px){
-    .card{
-        width:30%;
-        margin-left: 10%
-        
+@media screen and (max-width:640px){
+    .item .card {
+        width:150px;
+    }
+
+}
+
+@media screen and (max-width:599px){
+    .item .card {
+        width:200px;
+       
+    }
+    .slid{
+        height:200px;
+       }
+}
+
+@media screen and (max-width:501px){
+    .carousel-item{
+        height: 150px !important;
+    }
+    .carousel-item img{
+        height:150px;
+    }
+}
+
+@media only screen and (max-width:762px){  
+    #available .map{
+        display: flex;
+        justify-content: center;
+    }
+
+    #coupon{
+        margin-left: 17%;
+        margin-top: 10%;
+        width:400px;
+    }
+
+}
+    
+@media only screen and (max-width:940px){
+    #offer1 img{
+        width:90%;
+    }
+}
+
+@media only screen and (max-width:580px){
+    #coupon{
+        margin-left: 7%;
+        width:350px;
     }
 }
