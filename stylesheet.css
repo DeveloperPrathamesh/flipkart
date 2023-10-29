@@ -6,6 +6,7 @@
 a{
     text-decoration: none;
 }
+<<<<<<< HEAD
 
 body{
     background-color: #f1f3f6;
@@ -14,11 +15,37 @@ body{
 
 .dark{
     background-color: black;
+=======
+.dark{
+    background-color:black;
+    color:white;
+}
+.maindiv{
+    display: inline-block;
+>>>>>>> f7ec185f62c25e5e6a9a9244fa5dd49bccba597d
 }
 header{
     width:100%;
 }
 
+#coupon{
+    height:300px;
+    width:600px;
+    background-color: #f1f3f6;
+    position: absolute;
+    margin-top: 2%;
+    margin-left: 34%;
+    z-index: 100;
+    visibility:hidden;
+}
+
+#coupon button{
+    float: right;
+}
+
+#coupon span{
+    font-size: 30px;
+}
 
 .navbar{
     background-color: white !important;
@@ -368,6 +395,7 @@ footer{
     .item .card {
         width:150px;
     }
+<<<<<<< HEAD
 
 }
 
@@ -415,4 +443,6 @@ footer{
         margin-left: 7%;
         width:350px;
     }
+=======
+>>>>>>> f7ec185f62c25e5e6a9a9244fa5dd49bccba597d
 }
