@@ -6,7 +6,6 @@
 a{
     text-decoration: none;
 }
-<<<<<<< HEAD
 
 body{
     background-color: #f1f3f6;
@@ -15,37 +14,11 @@ body{
 
 .dark{
     background-color: black;
-=======
-.dark{
-    background-color:black;
-    color:white;
-}
-.maindiv{
-    display: inline-block;
->>>>>>> f7ec185f62c25e5e6a9a9244fa5dd49bccba597d
 }
 header{
     width:100%;
 }
 
-#coupon{
-    height:300px;
-    width:600px;
-    background-color: #f1f3f6;
-    position: absolute;
-    margin-top: 2%;
-    margin-left: 34%;
-    z-index: 100;
-    visibility:hidden;
-}
-
-#coupon button{
-    float: right;
-}
-
-#coupon span{
-    font-size: 30px;
-}
 
 .navbar{
     background-color: white !important;
@@ -106,7 +79,8 @@ form .search-btn:focus{
 #coupon{
     background-image: url(https://images.pexels.com/photos/5625130/pexels-photo-5625130.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
     background-size: cover;
-    height:400px;
+    opacity:;
+    height:300px;
     width:500px;
     background-color: white;
     position: absolute;
@@ -118,19 +92,16 @@ form .search-btn:focus{
 }
 
 #coupon h2{
-    margin-top:18%;
-    margin-bottom:14%;
+    margin-top:5%;
+    margin-bottom:4%;
 }
 .couponcont{
     text-align: center;
 }
 #coupon p{
-    font-size: 18px;
+    font-size: 15px;
     font-weight: bold;
-}
 
-#coupon h2{
-    font-weight: bold;
 }
 
 #coupon .code{
@@ -138,8 +109,6 @@ form .search-btn:focus{
     font-size: 25px;
     padding:5px;
     display: inline;
-    background-color: gray;
-    color: white ;
 }
 #coupon .close{
     background-color: blue;
@@ -353,7 +322,9 @@ footer{
 }
 
 @media only screen and (max-width:992px){
-   
+    .search-container{
+       display: none;
+    }
 
     .carousel-item{
         height: 250px !important;
@@ -365,12 +336,6 @@ footer{
         height: 238px;
     }
    
-}
-
-@media only screen and (max-width:1042px){
-.search-container{
-    display: none;
- }
 }
 
 @media only screen and (min-width:992px){
@@ -395,7 +360,6 @@ footer{
     .item .card {
         width:150px;
     }
-<<<<<<< HEAD
 
 }
 
@@ -443,6 +407,4 @@ footer{
         margin-left: 7%;
         width:350px;
     }
-=======
->>>>>>> f7ec185f62c25e5e6a9a9244fa5dd49bccba597d
 }
