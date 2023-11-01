@@ -71,6 +71,11 @@ form .search-btn:focus{
     margin-top:5px;
 }
 
+.weatherbtn{
+    background: transparent;
+    border: none;
+}
+
 #crsl{
     margin-top: 20px;
 
@@ -344,6 +349,9 @@ footer{
 
 @media only screen and (min-width:992px){
     .darkbtn1{
+        display: none;
+    }
+     .weatherbtn{
         display: none;
     }
 }
